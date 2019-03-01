@@ -33,26 +33,23 @@ public static class BattleHandler
         //Debug.Log(playerResult);
         //Debug.Log(npcResult);
 
-        float outcome = 1;
+        float outcome = 0;
+
+        //Finding out who won player or npc
         if (playerResult > npcResult)
         {
             outcome = 1;
         }
         else if (playerResult < npcResult)
         {
+            outcome = -1;
+        }
+        else
+        {
             outcome = 0;
         }
 
-        Debug.Log(outcome);
-            // Your code between here
-
-            //Debug.Log(data.npc.rhythm);
-            //Debug.Log(data.player.rhythm);
-
-            // Set outcome to 0 if the player lost
-            // Set outcome to 1 if the player won
-
-            // and here
+        //Debug.Log(outcome);
 
         var results = new BattleResultEventData(data.player, data.npc, outcome);
 

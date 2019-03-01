@@ -45,6 +45,7 @@ public class AnimationController : MonoBehaviour
                 anim.SetTrigger("Lose");
             }
         }
+
     }
 
     void FixedUpdate()

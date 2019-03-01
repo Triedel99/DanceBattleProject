@@ -14,6 +14,7 @@ public static class StatsGenerator
 {
     public static void InitialStats(Stats stats)
     {
+        //Setting starting level and xp
         stats.level = 1;
         stats.xp = 0;
 
@@ -30,6 +31,11 @@ public static class StatsGenerator
 
     public static void AssignUnusedPoints(Stats stats, int points)
     {
+        //Increasing player and npc stats when player levels up
+        stats.rhythm += points/4;
+        stats.style += points/4;
+        stats.luck += points/3;
+
         //Debug.Log(stats.rhythm);
         //Debug.Log(stats.style);
         //Debug.Log(stats.luck);

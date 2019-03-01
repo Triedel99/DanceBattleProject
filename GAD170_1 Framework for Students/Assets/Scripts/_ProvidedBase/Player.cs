@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     private PlayerController controller;
     private Animator anim;
     public bool isDancing = false;
-
     // Start is called before the first frame update
     void Awake()
     {
